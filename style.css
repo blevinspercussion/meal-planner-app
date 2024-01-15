@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+.day {
+  margin: 0 5rem 0 5rem;
+}
+
+#week {
+  display: flex;
+}
