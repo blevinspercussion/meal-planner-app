@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <title>Five Day Meal Planner</title>
   </head>
   <body>
@@ -13,23 +13,28 @@
     <section id="dietary-options">
       <input
         type="checkbox"
-        id="vegetarian"
+        id="check-vegetarian"
         name="vegetarian"
         value="Vegetarian"
       />
       <label for="vegetarian">Vegetarian</label>
-      <input type="checkbox" id="vegan" name="vegan" value="Vegan" />
+      <input type="checkbox" id="check-vegan" name="vegan" value="Vegan" />
       <label for="vegan">Vegan</label>
-      <input type="checkbox" id="low-carb" name="low-carb" value="Low Carb" />
+      <input
+        type="checkbox"
+        id="check-lowcarb"
+        name="low-carb"
+        value="Low Carb"
+      />
       <label for="low-carb">Low Carb</label>
-      <input type="checkbox" id="paleo" name="paleo" value="paleo" />
+      <input type="checkbox" id="check-paleo" name="paleo" value="paleo" />
       <label for="paleo">Paleo</label>
     </section>
-    <button>Generate Meal Plan!</button>
+    <button id="button-generate">Generate Meal Plan!</button>
     <section id="week">
       <div class="day">
         <h2>Monday</h2>
-        <label for="protein-monday"></label>
+        <label for="protein-monday">Protein: </label>
         <select name="protein-monday">
           <option value="chicken">Chicken</option>
           <option value="beef">Beef</option>
@@ -38,7 +43,7 @@
       </div>
       <div class="day">
         <h2>Tuesday</h2>
-        <label for="protein-tuesday"></label>
+        <label for="protein-tuesday">Protein: </label>
         <select name="protein-tuesday">
           <option value="chicken">Chicken</option>
           <option value="beef">Beef</option>
@@ -47,7 +52,7 @@
       </div>
       <div class="day">
         <h2>Wednesday</h2>
-        <label for="protein-wednesday"></label>
+        <label for="protein-wednesday">Protein: </label>
         <select name="protein-wednesday">
           <option value="chicken">Chicken</option>
           <option value="beef">Beef</option>
@@ -56,7 +61,7 @@
       </div>
       <div class="day">
         <h2>Thursday</h2>
-        <label for="protein-thursday"></label>
+        <label for="protein-thursday">Protein: </label>
         <select name="protein-thursday">
           <option value="chicken">Chicken</option>
           <option value="beef">Beef</option>
@@ -65,7 +70,7 @@
       </div>
       <div class="day">
         <h2>Friday</h2>
-        <label for="protein-friday"></label>
+        <label for="protein-friday">Protein: </label>
         <select name="protein-friday">
           <option value="chicken">Chicken</option>
           <option value="beef">Beef</option>
